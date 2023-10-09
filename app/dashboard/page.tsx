@@ -1,7 +1,8 @@
 import React from 'react'
+import styles from '../styles/Dashboard.module.css';
 
 export default function Dashboard() {
   return (
-    <div>ini halaman Dashboard</div>
+    <div className={styles.dashboard}>ini halaman Dashboard</div>
   )
 }
