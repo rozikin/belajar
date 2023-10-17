@@ -27,6 +27,7 @@ const Page = ({params, }: {params:{id:string}})=> {
       })
 
       router.push('/post')
+      router.refresh()
     }
 
     useEffect(()=>{

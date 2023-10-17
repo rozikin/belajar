@@ -1,7 +1,8 @@
 
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import  '../styles/globals.css';
+import '../styles/globals.css';
 
 
 export const metadata: Metadata = {
@@ -16,8 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
+      
+
+
       <body>
-        <ul>
+      <div className="container mx-auto px-4 py-4">
+      <ul>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/dashboard">Dashboard</Link></li>
           <li><Link href="/settings">Settings</Link></li>
@@ -25,8 +31,13 @@ export default function RootLayout({
           <li><Link href="/post">post</Link></li>
           <li><Link href="/example">example</Link></li>
         </ul>
+
+      </div>
+       
         {children}
-        </body>
+      </body>
+
+
     </html>
   )
 }
