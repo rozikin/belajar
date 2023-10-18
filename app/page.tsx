@@ -1,8 +1,9 @@
 
-export default function Home() {
+export default function HomePage() {
   return (
-   <div>
-    ini halaman home
-   </div>
+    <div className="">
+      <h1>HomePage</h1>
+    
+    </div>
   )
 }

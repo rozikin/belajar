@@ -1,6 +1,7 @@
 
 
 import type { Metadata } from 'next'
+import MainLayout from '@/components/MainLayout';
 import Link from 'next/link'
 import '../styles/globals.css';
 
@@ -17,12 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
-      
-
-
       <body>
-      <div className="container mx-auto px-4 py-4">
+        <MainLayout>
+  {children}
+
+        </MainLayout>
+        
+       
+
+
+      {/* <div className="container mx-auto px-4 py-4">
       <ul>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/dashboard">Dashboard</Link></li>
@@ -34,7 +39,7 @@ export default function RootLayout({
 
       </div>
        
-        {children}
+        {children} */}
       </body>
 
 
