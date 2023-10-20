@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import MainLayout from '@/components/MainLayout';
 import Link from 'next/link'
 import '../styles/globals.css';
+import MenuContextProvider from '@/context/MenuContext';
 
 
 export const metadata: Metadata = {
@@ -19,15 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <MenuContextProvider>
         <MainLayout>
-  {children}
-
+          {children}
         </MainLayout>
-        
-       
+        </MenuContextProvider>
 
 
-      {/* <div className="container mx-auto px-4 py-4">
+
+
+        {/* <div className="container mx-auto px-4 py-4">
       <ul>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/dashboard">Dashboard</Link></li>
