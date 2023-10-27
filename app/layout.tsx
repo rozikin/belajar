@@ -1,10 +1,11 @@
 
 
 import type { Metadata } from 'next'
-import MainLayout from '@/components/MainLayout';
+import MainLayout from '@/components/layout/MainLayout';
 import Link from 'next/link'
 import '../styles/globals.css';
 import MenuContextProvider from '@/context/MenuContext';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 
 export const metadata: Metadata = {

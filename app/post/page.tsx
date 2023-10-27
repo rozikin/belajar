@@ -13,7 +13,7 @@ const Page = async()=> {
 
     const posts = await getPosts()
     return (
-        <div>
+        <div className="bg-white rounded-lg mx-4 p-4">
             <p>hello ini Pos</p>
 
             <div className='w-[1000px] mx-auto pt-20'>

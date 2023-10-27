@@ -48,6 +48,7 @@ export default function create() {
           onChange={(e) => setTitle(e.target.value)}
           className="w-full border p-2 rounded-md"
           autoFocus
+          required
         />
         <input
           type="text"
