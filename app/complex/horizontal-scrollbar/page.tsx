@@ -58,8 +58,9 @@ const HorizontalScrollbarPage = () => {
                 <h1 className='text-blue-800 text-2x1'>Instagram stories</h1>
 
                 <HorizontalScrollbar>
-                    {users.map(item => <div> 
-                        <img src={item.image} alt={item.username} />
+                    {users.map(item => 
+                    <div className='shrink-0'> 
+                        <img src={item.image} alt={item.username} className='w-18 h-14 rounded-full cursor-pointer hover:scale-125 transition-all duration-200'/>
 
                     </div>)}
                 </HorizontalScrollbar>
