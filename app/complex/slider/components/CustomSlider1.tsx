@@ -6,7 +6,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SlideNavButton from "./SlideNavButton";
+import SlideNavButtons from "./SlideNavButtons";
 
 //external data import
 const url = "https://fakestoreapi.com/products";
@@ -46,7 +46,7 @@ const CustomSlider1 = () => {
         {products.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="bg-red-400 !flex justify-center item-center"
+            className="bg-red-200 !flex justify-center item-center"
           >
             <div className="border-2 border-blue-200 rounded-lg overflow-hidden w-[200px] h-[300px] flex justify-center items-center">
               <Image
@@ -59,7 +59,8 @@ const CustomSlider1 = () => {
           </SwiperSlide>
         ))}
 
-        <SlideNavButton />
+        <SlideNavButtons />
+
       </Swiper>
     </div>
   );
