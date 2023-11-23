@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import MainHeader from './layout-sections/MainHeader'
 import MainSidebar from './layout-sections/MainSidebar'
 import { MenuContext } from '@/context/MenuContext'
+import MobileButtonNavigation from './layout-sections/MobileButtonNavigation'
 
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
@@ -15,6 +16,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                 <MainHeader />
                 <main className="lg:ml-[280px]">{children}</main>
             </div>
+            <MobileButtonNavigation />
         </div>
     )
 }

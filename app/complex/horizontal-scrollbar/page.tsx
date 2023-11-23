@@ -1,5 +1,7 @@
 "use client"
-import HorizontalScrollbar from '@/components/horizontal-scrollbar/HorizontalScrollbar'
+
+import HorizontalScrollbar from '@/components/horizontal-scrollbar/HorizontalScrollbar';
+import Image from 'next/image';
 import React from 'react'
 
 const categories = [
@@ -59,8 +61,8 @@ const HorizontalScrollbarPage = () => {
 
                 <HorizontalScrollbar>
                     {users.map(item => 
-                    <div className='shrink-0'> 
-                        <img src={item.image} alt={item.username} className='w-18 h-14 rounded-full cursor-pointer hover:scale-125 transition-all duration-200'/>
+                    <div key={item.id} className='shrink-0'> 
+                        <Image src={item.image} alt={item.username} className='w-18 h-14 rounded-full cursor-pointer hover:scale-125 transition-all duration-200'/>
 
                     </div>)}
                 </HorizontalScrollbar>

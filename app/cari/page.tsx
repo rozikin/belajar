@@ -1,8 +1,8 @@
 "use client"
-import { React , useState } from 'react';
-import SectionResult from './[slug]/SectionResult';
+import {useState } from 'react';
+import SectionResult from './[slug]/sectionResult';
 
-export default function page() {
+export default function Page() {
 
   const [query, setQuery] = useState('');
 
